@@ -1,0 +1,84 @@
+catalog form                                                                                                       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+             background-color: #CBF6FF;
+        }
+        h2 {
+            text-align: center;
+                 background: linear-gradient(to right, #0000cc 0%, #66ccff 100%);
+        }
+        .product {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-item {
+            width: 40%;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+                background-color: #fff;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            
+        }
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .product-details {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 16px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+   <div style="background-color:"darkblue;"> <h2>Product Catalog</h2> </div>
+    <div class="product">
+        <div class="product-item">
+            <img class="product-image" src="shoes.jpg" alt="Product 1">
+            <div class="product-title"> <h3>CAMPUS Shoes<h3> </div>
+            <div class="product-details">HURRICANE Running Shoes For Men  (Black)</div>
+            <div class="product-price">₹1,077 </div>
+        </div>
+        <div class="product-item">
+            <img class="product-image" src="doraemon.jpg" alt="Product 2">
+            <div class="product-title"><h3>Doraemon<h3></div>
+            <div class="product-details">Doraemon Doraemon Plush (Naughty) 17 Inch - 43 cm  (Multicolor)</div>
+            <div class="product-price">₹1,349</div>
+        </div>
+        <div class="product-item">
+            <img class="product-image" src="headphone.jpg" alt="Product 3">
+            <div class="product-title"><h3>Bluetooth Headset<h3></div>
+            <div class="product-details">RENTOOR Cat Design Foldable Limited Edition Wireless Headphone With Mic & 3.5 mm Jack Bluetooth Headset  (GRAY, On the Ear)</div>
+            <div class="product-price">₹699</div>
+        </div>
+        <div class="product-item">
+            <img class="product-image" src="keyboard.jpg" alt="Product 4">
+            <div class="product-title"><h3>Mechanical Gaming Keyboard<h3></div>
+            <div class="product-details">Lyla RGB Backlit Mechanical Gaming Keyboard 104 Keys USB Black Keyboard Wired USB Multi-device Keyboard  (Multicolor)</div>
+            <div class="product-price">₹2,852</div>
+        </div>
+        <!-- Add more product items as needed -->
+    </div>
+</body>
+</html>
