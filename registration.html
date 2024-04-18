@@ -1,0 +1,99 @@
+registration form                                                                                                                                                              <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('background1.jpg'); /* Replace 'background.jpg' with the path to your image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center;
+        }
+        form {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+            border: none; /* Remove the border */
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px; /* reduced size */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 4px;
+            margin-bottom: 3px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #7329c2;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="register_process.html" method="POST">
+        <h1 style="color: #210640;"> Registration </h1> 
+
+        <label for="Firstname">First Name:</label>
+        <input type="text" id="Firstname" name="Firstname" required placeholder="Enter your First Name"><br>
+
+        <label for="Lastname">Last Name:</label>
+        <input type="text" id="Lastname" name="Lastname" required placeholder="Enter your Last Name"><br>
+        <label for="phonenumber"> Phonenumber:</label>
+        <input type="tel" name="country code" value="+91 " size="3" name="phonenumber" required size="10"/><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required><br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your Email"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your Password"><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password"><br><br>
+
+        <input type="submit" value="Register">
+        <p style="text-align: center; margin-top: 10px;">Already have an account? <a href="login.html">Login now</a></p>
+    </form>
+</body>
+</html>
